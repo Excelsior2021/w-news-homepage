@@ -17,4 +17,111 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Inter;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 16px 32px 16px;
+}
+.header__logo {
+  width: 45px;
+}
+
+.main {
+  margin: auto 16px;
+}
+
+.section {
+  margin-bottom: 64px;
+}
+
+.section-one__image {
+  width: 100%;
+}
+.section-one__heading {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.section-one__text {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.section-one__button {
+  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5deg, 85%, 63%);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 185px;
+  height: 48px;
+  border: none;
+  margin-top: 24px;
+}
+.section-one__button:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  cursor: pointer;
+}
+
+.section-two {
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 24px 20px;
+}
+.section-two__heading {
+  color: hsl(35deg, 77%, 62%);
+  margin-bottom: 35px;
+}
+.section-two__item {
+  list-style: none;
+}
+.section-two__card {
+  height: 84px;
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  margin-bottom: 31px;
+}
+.section-two__card--no-border {
+  border: none;
+  margin: 0;
+}
+.section-two__card-heading {
+  color: hsl(36deg, 100%, 99%);
+  margin-bottom: 8px;
+}
+.section-two__card-text {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 15px;
+}
+
+.section-three {
+  margin-bottom: 75px;
+}
+.section-three__item {
+  list-style: none;
+}
+.section-three__card {
+  display: flex;
+  margin-bottom: 32px;
+}
+.section-three__image {
+  width: 100px;
+  height: 130px;
+  margin-right: 24px;
+}
+.section-three__number {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.section-three__heading {
+  color: hsl(240deg, 100%, 5%);
+  margin-bottom: 9px;
+}
+.section-three__text {
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

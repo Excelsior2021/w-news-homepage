@@ -1,3 +1,129 @@
 @use "./styles/globals";
 @use "./styles/variables" as *;
 @use "./styles/mixins" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 16px 32px 16px;
+
+  &__logo {
+    width: 45px;
+  }
+}
+
+.main {
+  margin: auto 16px;
+}
+
+.section {
+  margin-bottom: 64px;
+}
+
+.section-one {
+  &__image {
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: $dark-greyish-blue;
+    font-size: $paragraph;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    color: $white-off;
+    background-color: $red-soft;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 185px;
+    height: 48px;
+    border: none;
+    margin-top: 24px;
+
+    &:hover {
+      background-color: $dark-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.section-two {
+  background-color: $dark-blue;
+  padding: 24px 20px;
+
+  &__heading {
+    color: $orange-soft;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__card {
+    height: 84px;
+    border-bottom: 1px solid $dark-greyish-blue;
+    margin-bottom: 31px;
+
+    &--no-border {
+      border: none;
+      margin: 0;
+    }
+  }
+
+  &__card-heading {
+    color: $white-off;
+    margin-bottom: 8px;
+  }
+
+  &__card-text {
+    color: $dark-greyish-blue;
+    font-size: $paragraph;
+  }
+}
+
+.section-three {
+  margin-bottom: 75px;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &__image {
+    width: 100px;
+    height: 130px;
+    margin-right: 24px;
+  }
+
+  &__number {
+    color: $greyish-blue;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  &__heading {
+    color: $dark-blue;
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    font-size: $paragraph;
+  }
+}

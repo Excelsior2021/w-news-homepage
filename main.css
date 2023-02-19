@@ -74,6 +74,7 @@ body {
 }
 .section-two__heading {
   color: hsl(35deg, 77%, 62%);
+  font-size: 32px;
   margin-bottom: 35px;
 }
 .section-two__item {
@@ -124,4 +125,44 @@ body {
 }
 .section-three__text {
   font-size: 15px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  justify-content: end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(240deg, 100%, 5%, 0.5);
+}
+.modal__overlay {
+  position: relative;
+  background-color: hsl(36deg, 100%, 99%);
+  width: 256px;
+  height: 100%;
+}
+.modal__icon {
+  position: absolute;
+  top: 27.3px;
+  right: 20.8px;
+}
+.modal__nav {
+  position: absolute;
+  top: 144px;
+  left: 24px;
+  width: 203px;
+}
+.modal__item {
+  text-transform: capitalize;
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+.modal__item:last-child {
+  margin-bottom: 0;
+}
+.modal--show {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

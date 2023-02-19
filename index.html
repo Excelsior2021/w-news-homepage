@@ -8,6 +8,7 @@
       href="./assets/images/logo.svg"
       type="image/x-icon" />
     <link rel="stylesheet" href="./main.css" />
+    <script src="./script.js" defer></script>
     <title>W-News homepage</title>
   </head>
   <body>
@@ -15,6 +16,7 @@
       <img class="header__logo" src="./assets/images/logo.svg" alt="logo" />
       <img
         class="header__menu"
+        id="menu"
         src="./assets/images/icon-menu.svg"
         alt="menu" />
     </header>
@@ -133,5 +135,23 @@
         </ul>
       </section>
     </main>
+
+    <div class="modal" id="modal">
+      <div class="modal__overlay">
+        <img
+          class="modal__icon"
+          id="close-menu"
+          src="./assets/images/icon-menu-close.svg"
+          alt="close menu" />
+
+        <ul class="modal__nav">
+          <li class="modal__item">home</li>
+          <li class="modal__item">new</li>
+          <li class="modal__item">popular</li>
+          <li class="modal__item">trending</li>
+          <li class="modal__item">categories</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

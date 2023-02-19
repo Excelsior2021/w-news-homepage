@@ -114,7 +114,7 @@ body {
 
 @media (min-width: 1024px) {
   .section-one {
-    flex: 2;
+    flex: 7;
     margin-right: 30px;
   }
 }
@@ -182,7 +182,7 @@ body {
 }
 @media (min-width: 1024px) {
   .section-two {
-    flex: 1;
+    flex: 3;
     padding: 32px 32px;
   }
 }
@@ -228,11 +228,6 @@ body {
 .section-two__card-text {
   color: hsl(233deg, 8%, 79%);
   font-size: 15px;
-}
-@media (min-width: 1024px) {
-  .section-two__card-text {
-    font-size: 16.5px;
-  }
 }
 
 .section-three {

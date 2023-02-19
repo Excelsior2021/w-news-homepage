@@ -11,7 +11,7 @@
     <script src="./script.js" defer></script>
     <title>W-News homepage</title>
   </head>
-  <body>
+  <body id="body">
     <header class="header">
       <img class="header__logo" src="./assets/images/logo.svg" alt="logo" />
       <img
@@ -19,69 +19,107 @@
         id="menu"
         src="./assets/images/icon-menu.svg"
         alt="menu" />
+      <ul class="header__nav">
+        <li class="header__item">
+          <a href="#home" class="header__link">home</a>
+        </li>
+        <li class="header__item">
+          <a href="#new" class="header__link">new</a>
+        </li>
+        <li class="header__item">
+          <a href="#popular" class="header__link">popular</a>
+        </li>
+        <li class="header__item">
+          <a href="#trending" class="header__link">trending</a>
+        </li>
+        <li class="header__item">
+          <a href="#categories" class="header__link">categories</a>
+        </li>
+      </ul>
     </header>
 
     <main class="main">
-      <section class="section section-one">
-        <img
-          class="section-one__image"
-          src="./assets/images/image-web-3-mobile.jpg"
-          alt="web-3" />
+      <div class="main__top-desktop">
+        <section class="section section-one">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/images/image-web-3-desktop.jpg" />
+            <img
+              class="section-one__image"
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="web-3" />
+          </picture>
 
-        <h1 class="section-one__heading">The Bright Future of Web 3.0?</h1>
+          <div class="section-one__content">
+            <h1 class="section-one__heading">The Bright Future of Web 3.0?</h1>
 
-        <p class="section-one__text">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-
-        <button class="section-one__button">read more</button>
-      </section>
-
-      <section class="section section-two">
-        <h2 class="section-two__heading">New</h2>
-
-        <ul class="section-two__list">
-          <li class="section-two__item">
-            <article class="section-two__card">
-              <h3 class="section-two__card-heading">
-                Hydrogen VS Electric Cars
-              </h3>
-
-              <p class="section-two__card-text">
-                Will hydrogen-fueled cars ever catch up to EVs?
+            <aside class="section-one__aside">
+              <p class="section-one__text">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
               </p>
-            </article>
-          </li>
 
-          <li class="section-two__item">
-            <article class="section-two__card">
-              <h3 class="section-two__card-heading">
-                The Downsides of AI Artistry
-              </h3>
+              <button class="section-one__button">read more</button>
+            </aside>
+          </div>
+        </section>
 
-              <p class="section-two__card-text">
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
-            </article>
-          </li>
+        <section class="section section-two">
+          <h2 class="section-two__heading">New</h2>
 
-          <li class="section-two__item">
-            <article class="section-two__card section-two__card--no-border">
-              <h3 class="section-two__card-heading">
-                Is VC Funding Drying Up?
-              </h3>
+          <ul class="section-two__list">
+            <li class="section-two__item">
+              <article class="section-two__card">
+                <h3 class="section-two__card-heading">
+                  <a
+                    href="#Hydrogen VS Electric Cars"
+                    class="section-two__link">
+                    Hydrogen VS Electric Cars
+                  </a>
+                </h3>
 
-              <p class="section-two__card-text">
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
-            </article>
-          </li>
-        </ul>
-      </section>
+                <p class="section-two__card-text">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+            </li>
+
+            <li class="section-two__item">
+              <article class="section-two__card">
+                <h3 class="section-two__card-heading">
+                  <a
+                    href="#The Downsides of AI Artistry"
+                    class="section-two__link">
+                    The Downsides of AI Artistry
+                  </a>
+                </h3>
+
+                <p class="section-two__card-text">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+            </li>
+
+            <li class="section-two__item">
+              <article class="section-two__card section-two__card--no-border">
+                <h3 class="section-two__card-heading">
+                  <a href="#Is VC Funding Drying Up?" class="section-two__link">
+                    Is VC Funding Drying Up?
+                  </a>
+                </h3>
+
+                <p class="section-two__card-text">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="section section-three">
         <ul class="section-three__list">
@@ -93,7 +131,11 @@
                 alt="retro pcs" />
               <div class="section-three__info">
                 <div class="section-three__number">01</div>
-                <h3 class="section-three__heading">Reviving Retro PCs</h3>
+                <h3 class="section-three__heading">
+                  <a href="#Reviving Retro PCs" class="section-three__link"
+                    >Reviving Retro PCs</a
+                  >
+                </h3>
                 <p class="section-three__text">
                   What happens when old PCs are given modern upgrades?
                 </p>
@@ -109,7 +151,14 @@
                 alt="top laptops" />
               <div class="section-three__info">
                 <div class="section-three__number">02</div>
-                <h3 class="section-three__heading">Top 10 Laptops of 2022</h3>
+                <h3 class="section-three__heading">
+                  <a
+                    href="#Top 10 Laptops of
+                  2022"
+                    class="section-three__link"
+                    >Top 10 Laptops of 2022</a
+                  >
+                </h3>
                 <p class="section-three__text">
                   What happens when old PCs are given modern upgrades?
                 </p>
@@ -125,7 +174,14 @@
                 alt="gaming growth" />
               <div class="section-three__info">
                 <div class="section-three__number">03</div>
-                <h3 class="section-three__heading">The Growth of Gaming</h3>
+                <h3 class="section-three__heading">
+                  <a
+                    href="#The Growth of
+                  Gaming"
+                    class="section-three__link"
+                    >The Growth of Gaming</a
+                  >
+                </h3>
                 <p class="section-three__text">
                   What happens when old PCs are given modern upgrades?
                 </p>
@@ -139,17 +195,29 @@
     <div class="modal" id="modal">
       <div class="modal__overlay">
         <img
-          class="modal__icon"
+          class="modal__close-menu"
           id="close-menu"
           src="./assets/images/icon-menu-close.svg"
           alt="close menu" />
 
         <ul class="modal__nav">
-          <li class="modal__item">home</li>
-          <li class="modal__item">new</li>
-          <li class="modal__item">popular</li>
-          <li class="modal__item">trending</li>
-          <li class="modal__item">categories</li>
+          <ul class="modal__nav">
+            <li class="modal__item">
+              <a href="#home" class="modal__link">home</a>
+            </li>
+            <li class="modal__item">
+              <a href="#new" class="modal__link">new</a>
+            </li>
+            <li class="modal__item">
+              <a href="#popular" class="modal__link">popular</a>
+            </li>
+            <li class="modal__item">
+              <a href="#trending" class="modal__link">trending</a>
+            </li>
+            <li class="modal__item">
+              <a href="#categories" class="modal__link">categories</a>
+            </li>
+          </ul>
         </ul>
       </div>
     </div>
